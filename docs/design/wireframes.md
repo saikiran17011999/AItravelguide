@@ -232,6 +232,8 @@ The visual area can hold an authorised station diagram, map link preview, or cle
 
 **Rule:** never render an image panel without one of: an authorised source line, an unavailable-source message, or an illustration label. The three states are mutually exclusive and never blended.
 
+**Interaction:** a live map excerpt pans/zooms like a familiar map app; a diagram, photo, or illustration only pinch/tap-zooms for legibility, never pans into undrawn space — see the [design system's map interaction rules](design-system.md#map-and-reference-panel-interaction).
+
 ## 9. Trip assistant — sourced answers only
 
 ```text

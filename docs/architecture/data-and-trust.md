@@ -32,9 +32,9 @@ erDiagram
 | `ExtractedBooking` | Candidate fields from a document, field confidence, page/region evidence, extraction status, user confirmation and correction history. |
 | `Journey` | Versioned planned/confirmed/recommended-alternative itinerary, generation time, assumptions, overall trust state. |
 | `JourneySegment` | Ordered origin/destination, mode, operator/line/service, scheduled/estimated/actual times, booking references, platform/coach/seat, ticket constraints, map/deep link. |
-| `Location` | Canonical/provider IDs, display names, coordinates where allowed, type (airport/station/stop/entrance/address), locale, ambiguity status. |
+| `Location` | Canonical/provider IDs, display names, **original-language name as it appears on local signage** (stored separately from the translated display name, never overwritten by translation), coordinates where allowed, type (airport/station/stop/entrance/address), locale, ambiguity status. |
 | `Transfer` | From/to segments, required path/context, planned duration, buffer policy, accessibility/luggage constraints, risk state. |
-| `InstructionStep` | Structured action, plain-language explanation, recognisable cue, success check, warning, linked segment/fact IDs, locale, guide version. |
+| `InstructionStep` | Structured action, plain-language explanation, recognisable cue (**pairing the location's original-language signage text with its translated explanation, never translation-only**), success check, warning, linked segment/fact IDs, locale, guide version. |
 | `ImageReference` | Authorised map/diagram/photo/illustration, purpose, source URL, attribution, licence/use restriction, retrieval time, caption, verification state. |
 | `DataSource` | Provider/operator identity, geographic/product coverage, terms version, attribution/caching rules, availability, contact/escalation metadata. |
 | `VerificationRecord` | Subject fact ID, source/evidence, value, state, observed/retrieved time, expires-at/refresh policy, conflict group, reviewer/system origin. |

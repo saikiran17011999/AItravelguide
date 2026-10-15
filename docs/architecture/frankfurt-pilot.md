@@ -75,6 +75,7 @@ stateDiagram-v2
 - Use simulated or de-identified documents for the private prototype until a real-document consent notice, storage region, retention period, and deletion limitations are approved.
 - Do not enable continuous location tracking for this prototype. External map links may receive location according to their own user interaction and privacy terms.
 - The final retention period is intentionally not invented. It is an open product/legal decision; the interface must state the selected duration before upload.
+- **Proposed privacy-first default, pending product/legal confirmation** (same non-binding-default pattern as the [transfer-buffer policy](data-and-trust.md#transfer-buffer-policy)): auto-delete the original uploaded ticket file no later than 7 days after the trip's travel date, or immediately on trip/document deletion — whichever is sooner. The trip's derived facts (not the raw file) may persist only as long as the traveller keeps the trip, and the whole trip — files and derived facts — auto-expires no later than 90 days after the travel date if the traveller never deletes it. Full tickets are never retained indefinitely by default, even before the final policy is approved.
 
 ## Recommended prototype boundary
 

@@ -92,6 +92,25 @@ No layout may require horizontal scrolling or a hover-only control at any breakp
 
 When `prefers-reduced-motion` is set, replace sliding/scaling transitions with an instant or opacity-only change; never use motion as the only cue that a state changed, and never animate in a way that blocks interaction or auto-advances a step.
 
+## Iconography
+
+- Use a single simple, stroke-based icon style: 2 px stroke, 24 px grid, rounded joins, no fill except small status dots. Never photographic, skeuomorphic, or emoji icons.
+- Draw transport-mode icons (train, bus, walk, plane) as an original, minimal set in this stroke style — do not trace or reproduce another company's icon set (e.g., Google's Material Symbols) verbatim; a recognisable third-party icon style is still that company's protected design, not a free reference.
+- Keep transport-mode icons visually distinct from trust-state icons (check, calendar, pulse, warning triangle) so a traveller never confuses "which vehicle" with "how verified" at a glance.
+- Every icon-only control has an accessible name (`aria-label`); a decorative icon paired with visible text is `aria-hidden`. Icons never carry meaning alone — always pair with the text/label patterns in the trust-state table below.
+
+## Map and reference-panel interaction
+
+The brief's "use Google Maps as a reference for familiar mapping interactions" means borrowing well-known map *gestures*, not adopting Google Maps as the visual differentiator — the step-by-step guide stays primary. The map/reference panel behaves differently depending on what it holds:
+
+| Content | Interaction | Why |
+| --- | --- | --- |
+| An embedded live/external map excerpt (where licence permits) | Standard pan and pinch-zoom, like any familiar map app | Travellers already know these gestures; relearning one would slow them down mid-journey. |
+| An official station diagram, signage photo, or illustrative graphic | Pinch/tap-to-zoom only, for legibility — no panning into undrawn space | It is a fixed reference image, not a navigable map; panning would falsely imply more coverage than the image has. |
+| No authorised reference available | Static message, no map gesture at all | Nothing to interact with; the panel must not render an empty pannable canvas. |
+
+Tapping the panel never silently substitutes a different location than the current step's confirmed segment.
+
 ## Trust-state system
 
 | State | Colour role | Icon/label pattern | Example |

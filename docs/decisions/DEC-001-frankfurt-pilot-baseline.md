@@ -30,7 +30,7 @@ This is a scenario shape, not a pre-booked or live operational itinerary. Train 
 | Inputs | Arrival airport/location, arrival date and time, final accommodation address/pin, traveller preferences, uploaded booking documents, and optional intermediate tickets/reservations. |
 | Intermediate travel | If a traveller supplies a booked train/bus ticket, preserve it as booking evidence. If not, propose source-labelled route options only; the proposal is not a booking and must be explicitly distinguished. |
 | Live data | MVP uses verified scheduled information, map/deep links, and PDF/offline snapshots. Real-time updates are an optional adapter after a provider-specific proof. |
-| Documents | Private processing, minimal retention, user-initiated deletion for original documents and derived trip data. Original-ticket retention duration remains an approval item. |
+| Documents | Private processing, minimal retention, user-initiated deletion for original documents and derived trip data. A privacy-first default auto-expiry is proposed in [frankfurt-pilot.md](../architecture/frankfurt-pilot.md#data-minimisation-and-retention-design) (7 days post-travel for the raw file, 90 days for the whole trip); the final duration and storage region remain an approval item. |
 | Brand | Temporary name “AI Travel Companion”; calm light-neutral surfaces, dark navy text, restrained blue accents, instruction-first rather than chatbot-first UI. |
 
 ## Assumptions recorded
@@ -51,6 +51,6 @@ This is a scenario shape, not a pre-booked or live operational itinerary. Train 
 ## Remaining approval items
 
 - Exact accommodation test address or representative test pin.
-- Original document retention/auto-deletion duration and any backup policy.
+- Original document retention/auto-deletion duration and any backup policy (a proposed default exists; it is not yet confirmed).
 - Selected route/location/map/OCR/LLM/PDF providers after technical and licence evaluation.
 - Whether the private prototype will process real personal tickets or simulated/de-identified test documents only.
