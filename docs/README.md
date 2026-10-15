@@ -14,7 +14,7 @@ This set translates the initial product brief into a reviewable, implementation-
 3. [Experience specification](product/experience.md) — journey flow, information architecture, screens, and trust cues.
 4. [Architecture overview](architecture/overview.md) — boundaries, flows, provider adapters, and security.
 5. [Data and trust model](architecture/data-and-trust.md) — entities, evidence, verification, and AI constraints.
-6. [Provider evaluation](research/provider-evaluation.md) — research findings, selection criteria, and licensing gates.
+6. [Provider evaluation](research/provider-evaluation.md) — research findings, selection criteria, and licensing gates. See also the [draft provider recommendation](research/provider-recommendation.md), pending approval.
 7. [Delivery roadmap](plan/roadmap.md) — staged work, approval gates, and prototype plan.
 8. [Open questions](plan/open-questions.md) — decisions needed before implementation.
 9. [Frankfurt pilot decision](decisions/DEC-001-frankfurt-pilot-baseline.md) — approved design baseline and assumptions.
