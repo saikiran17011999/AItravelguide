@@ -2,9 +2,33 @@
 
 ## Project status
 
-This repository is the foundation for a new web application. The initial product direction is a customer-facing AI assistant: customers ask questions in natural language, and the application selects an appropriate model and approved tools to produce a helpful answer or complete an allowed task. The brand, domain, data model, integrations, and final technology choices will be supplied by the user in later conversations.
+This repository is the foundation for **AI Travel Companion**: a mobile-first application that turns a traveller's confirmed booking details and authorised transport/location sources into a clear, visual, step-by-step journey guide. The product brief is distilled into the Markdown documentation under `docs/`.
 
-Do not invent product requirements or start a framework scaffold until the user supplies a product brief or explicitly asks for a technical recommendation.
+The work is currently in discovery and specification. Do not scaffold or implement the application until the relevant discovery, requirements, experience, architecture, and provider-selection gates in `docs/plan/roadmap.md` are approved by the user.
+
+## Source of truth and delivery order
+
+When documents conflict, use this order: the user's latest explicit direction, `CLAUDE.md`, the approved documents in `docs/`, then implementation details. Update the relevant documentation in the same change when a product or architectural decision changes.
+
+Work through these stages in order:
+
+1. Verify the launch geography, pilot journey corridor, data providers, licensing, privacy policy, and live-data promise.
+2. Finalise the PRD, user flows, source-verification model, and acceptance criteria.
+3. Produce wireframes and an approved design system.
+4. Build a small end-to-end prototype with realistic, authorised sample data.
+5. Validate the prototype against documented failure and safety scenarios before expanding scope.
+
+Do not present a capability as supported in a city or country merely because another provider supports it elsewhere.
+
+## Travel fact and provenance rules
+
+- A booking document is evidence of a booked itinerary, not proof that a service is currently operating. Display document-derived facts for user confirmation.
+- Route engines and operator feeds are authoritative only for the fields, geography, freshness, and licence they actually provide.
+- The LLM may extract candidates, ask for clarification, simplify verified facts, translate terminology, and explain recovery options. It must not invent or silently alter a route, platform, ticket restriction, time, entrance, stop, or vehicle.
+- Every critical instruction must link to a structured evidence record and show a meaningful state: booked/confirmed, scheduled, live estimate, unverified, conflicting, or expired. Confidence is not a substitute for verification status.
+- Keep planned, scheduled, booked, real-time, and recommended-alternative journeys distinct. Never silently replace a ticket-bound leg with an alternative.
+- Use only authorised images, diagrams, maps, and data. Retain source URL, licence/attribution requirements, retrieval time, and permitted use. Label any generated image or illustrative diagram clearly; never represent it as a real location photograph.
+- An offline guide is a user-downloaded or safely cached snapshot with its generation time and freshness labels. It is not a claim that live transport data is available offline.
 
 ## AI assistant and tool use
 
