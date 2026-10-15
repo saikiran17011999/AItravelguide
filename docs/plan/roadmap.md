@@ -8,8 +8,8 @@ The project moves from evidence to prototype to implementation. A phase does not
 
 | Phase | Outcome | Required artefacts | Approval gate |
 | --- | --- | --- | --- |
-| 0. Foundation | Shared product and trust constraints | Current instruction files and documentation index | This gate is complete for planning only. |
-| A. Discovery | Evidence for user problem, competitors, and feasible pilot corridor | Research notes, provider scorecard, user-research plan, risks | Approve one launch geography/corridor and research scope. |
+| 0. Foundation | Shared product and trust constraints | Current instruction files and documentation index | Complete for planning only. |
+| A. Discovery | Evidence for user problem, competitors, and feasible pilot corridor | Research notes, provider scorecard, user-research plan, risks | Geography/corridor is approved in DEC-001; provider/licence proof remains open. |
 | B. Requirements | Bounded MVP and testable product contract | Approved PRD, user stories, acceptance criteria, trust/freshness policy | Approve MVP scope and data/privacy boundaries. |
 | C. Experience design | Testable mobile-first interaction model | Task flows, wireframes, content rules, design system direction | Approve primary flow and screen specification. |
 | D. Architecture | Buildable, lawful, secure technical plan | Selected-provider decision records, schemas, threat/privacy assessment, deployment outline | Approve stack and providers before provisioning or coding. |
@@ -70,6 +70,8 @@ Do not create the app until all of the following have written approval:
 5. Architecture/data-model/guide-schema direction.
 6. Wireframes for the primary mobile flow.
 7. Evaluation plan and minimum prototype success measures.
+
+The pilot geography, release type, English-first language strategy, source-labelled schedule-only MVP, and brand direction are approved in [DEC-001](../decisions/DEC-001-frankfurt-pilot-baseline.md). These approvals do not select paid services or satisfy the provider/licence/privacy gates.
 
 ## Branch and review practice
 

@@ -6,6 +6,8 @@ The system should be **provider-adaptable and evidence-first**. Structured journ
 
 This is a preliminary architecture, not a stack decision. Technology choices follow the provider and privacy gates in the roadmap.
 
+The current pilot-specific vertical slice is documented in [Frankfurt pilot architecture](frankfurt-pilot.md). It adds no operational facts beyond the user-confirmed inputs and approved provider responses.
+
 ## Logical components
 
 ```mermaid

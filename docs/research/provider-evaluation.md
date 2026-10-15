@@ -3,6 +3,8 @@
 **Status:** Preliminary research, last reviewed 2026-10-15.
 **Decision:** No provider is selected. This document identifies what must be proven for the launch corridor; it is not legal advice.
 
+The approved pilot corridor is Frankfurt Airport → Heidelberg Hbf → Boxberg. See [technology options and cost comparison](options-and-costs.md) for a provider-neutral shortlist, current public price references, and selection protocol.
+
 ## Market cross-check
 
 Google Maps, Citymapper, and Moovit already provide core trip-planning, transit, and live-direction capabilities in supported areas. Google Maps exposes transit departures that may be real-time or scheduled; Moovit describes routes with walking/stop details and, where available, live directions; Citymapper describes live route planning and step-by-step journey assistance. The product should not compete by duplicating their generic map UI.

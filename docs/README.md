@@ -2,7 +2,7 @@
 
 ## Status
 
-**Phase:** Discovery and requirements definition.
+**Phase:** Discovery, requirements, and low-fidelity experience design.
 **Implementation status:** No application code or provider has been approved.
 
 This set translates the initial product brief into a reviewable, implementation-ready plan. It deliberately preserves decisions that require product, commercial, legal, or user approval.
@@ -16,6 +16,9 @@ This set translates the initial product brief into a reviewable, implementation-
 5. [Provider evaluation](research/provider-evaluation.md) — research findings, selection criteria, and licensing gates.
 6. [Delivery roadmap](plan/roadmap.md) — staged work, approval gates, and prototype plan.
 7. [Open questions](plan/open-questions.md) — decisions needed before implementation.
+8. [Frankfurt pilot decision](decisions/DEC-001-frankfurt-pilot-baseline.md) — approved design baseline and assumptions.
+9. [Wireframes](design/wireframes.md) and [design system](design/design-system.md) — mobile-first interface direction.
+10. [Frankfurt pilot architecture](architecture/frankfurt-pilot.md) and [options/costs](research/options-and-costs.md) — vertical-slice boundary and provider comparison.
 
 ## Source-of-truth rules
 
@@ -29,7 +32,7 @@ This set translates the initial product brief into a reviewable, implementation-
 Build a **single-corridor, document-to-guide prototype** before a broad travel platform:
 
 1. Let a traveller upload one flight or rail ticket and review the extracted details.
-2. Plan a single airport/station-to-destination public-transport journey in one approved geography.
+2. Plan a Frankfurt Airport → Heidelberg Hbf → Boxberg journey, using exact arrival time and a precise destination address.
 3. Generate a traceable, step-by-step guide and mobile/offline-friendly PDF.
 4. Make uncertainty, source, freshness, and recovery guidance visible.
 

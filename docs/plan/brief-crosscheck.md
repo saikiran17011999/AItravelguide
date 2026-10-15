@@ -2,7 +2,7 @@
 
 ## Review result
 
-The initial brief defines a valuable, differentiated product and appropriately warns against unsupported travel claims. It is ready to move through discovery and requirements work. It is **not** ready for application scaffolding because the launch geography, provider/licence fit, privacy policy, and live-data promise are not yet decided.
+The initial brief defines a valuable, differentiated product and appropriately warns against unsupported travel claims. The launch scenario is now approved as Frankfurt Airport → Heidelberg Hbf → Boxberg, and low-fidelity wireframes/design direction are documented. It is **not** ready for application scaffolding because the provider/licence fit, exact retention policy, representative destination/test data, and live-data promise are not yet decided.
 
 ## Requirement traceability
 
@@ -21,6 +21,7 @@ The initial brief defines a valuable, differentiated product and appropriately w
 | Privacy, reliability, and safety | Covered at principle level | [architecture](../architecture/overview.md), [roadmap](roadmap.md) | Complete threat/privacy assessment for chosen stack/providers. |
 | Measurable non-functional targets | Planned, not invented | [PRD](../product/PRD.md), [validation plan](validation-plan.md) | Baseline prototype performance before setting public SLOs. |
 | Future features | Explicitly deferred | [PRD](../product/PRD.md), [roadmap](roadmap.md) | Re-prioritise only after MVP validation. |
+| Frankfurt pilot, wireframes, and visual direction | Covered as an approved design baseline | [DEC-001](../decisions/DEC-001-frankfurt-pilot-baseline.md), [wireframes](../design/wireframes.md), [design system](../design/design-system.md) | Validate with target users; do not turn simulated operational facts into production claims. |
 
 ## Critical constraints found
 
