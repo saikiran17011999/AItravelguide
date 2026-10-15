@@ -20,6 +20,7 @@ This set translates the initial product brief into a reviewable, implementation-
 9. [Frankfurt pilot decision](decisions/DEC-001-frankfurt-pilot-baseline.md) — approved design baseline and assumptions.
 10. [Wireframes](design/wireframes.md) and [design system](design/design-system.md) — mobile-first interface direction.
 11. [Frankfurt pilot architecture](architecture/frankfurt-pilot.md) and [options/costs](research/options-and-costs.md) — vertical-slice boundary and provider comparison.
+12. [Usability-test script](plan/usability-test-script.md) and [simulated ticket fixtures](../fixtures/tickets/README.md) — how to run the target-user sessions and what test data to use.
 
 ## Source-of-truth rules
 

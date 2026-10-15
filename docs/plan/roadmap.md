@@ -33,16 +33,16 @@ The prototype must not claim support for untested countries, live monitoring, pl
 
 ### Discovery and requirements
 
-- [ ] Choose candidate launch corridors and score them using the provider evaluation criteria.
-- [ ] Conduct 5–8 interviews or usability sessions with the intended travellers; confirm language, anxiety, luggage, and offline needs.
-- [ ] Collect a consented, representative test corpus of flight/train tickets and screenshots; define data-handling rules first.
+- [x] Choose candidate launch corridors and score them using the provider evaluation criteria. Superseded 2026-10-15: the product owner chose the Frankfurt corridor directly in [DEC-001](../decisions/DEC-001-frankfurt-pilot-baseline.md) rather than scoring it against alternatives; no comparative scores were fabricated for corridors never actually evaluated.
+- [ ] Conduct 5–8 interviews or usability sessions with the intended travellers; confirm language, anxiety, luggage, and offline needs. Script ready: see [usability-test-script.md](usability-test-script.md). Sessions themselves still need to be run by the product owner.
+- [x] Collect a consented, representative test corpus of flight/train tickets and screenshots; define data-handling rules first. Superseded 2026-10-15: the product owner chose simulated fixtures over real/consented documents for now — see [fixtures/tickets](../../fixtures/tickets/README.md); data-handling rules are in [frankfurt-pilot.md](../architecture/frankfurt-pilot.md#data-minimisation-and-retention-design). Revisit if real documents are approved later.
 - [x] Convert PRD requirements into user stories with acceptance criteria and explicit non-goals. See [user stories](../product/user-stories.md).
 - [x] Define fact statuses, freshness rules, transfer-buffer policy, recovery language, and source-attribution requirements. See [data and trust model](../architecture/data-and-trust.md); transfer-buffer minutes are a proposed default pending product-owner confirmation.
 
 ### Experience design
 
 - [x] Produce low-fidelity mobile wireframes for all screens in the experience specification. Visually reviewed by the product owner as a clickable mockup on 2026-10-15 ([wireframes](../design/wireframes.md), [design system](../design/design-system.md)).
-- [ ] Test the document-review and current-step screens with target users before visual polish.
+- [ ] Test the document-review and current-step screens with target users before visual polish. Covered by the same [usability-test-script.md](usability-test-script.md) tasks 2 and 4; still needs real sessions run.
 - [ ] Define copy patterns for uncertainty, stale data, no route, conflicting data, and emergency escalation.
 
 ### Architecture and provider selection

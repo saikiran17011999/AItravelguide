@@ -1,0 +1,28 @@
+==================================================
+SAMPLE / SIMULATED — NOT A REAL TICKET
+Generated for AI Travel Companion prototype testing only.
+==================================================
+
+Deutsche Bahn
+Fahrkarte / Ticket
+
+Reisender / Traveller: MUSTERMANN/ERIKA
+Auftragsnummer / Booking reference: SIM-9F3K7Q
+
+Von / From:  Frankfurt(M) Flughafen Fernbf
+Nach / To:   Heidelberg Hbf
+
+Zug / Train:        ICE 1134
+Datum / Date:        18.10.2026
+Abfahrt / Departure:  16:08
+Ankunft / Arrival:    17:02
+Gleis / Platform:     (wird am Bahnhof angezeigt / shown at station)
+
+Wagen / Coach: 22      Platz / Seat: 134
+Klasse / Class: 2
+
+Tarif / Fare: Sparpreis, nicht übertragbar
+Preis / Price: EUR 29,90
+
+Gültig nur in Verbindung mit amtlichem Lichtbildausweis.
+Valid only with official photo ID.

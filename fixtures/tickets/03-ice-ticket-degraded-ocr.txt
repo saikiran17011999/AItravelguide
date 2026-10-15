@@ -1,0 +1,36 @@
+==================================================
+SAMPLE / SIMULATED — NOT A REAL TICKET
+Generated for AI Travel Companion prototype testing only.
+This file intentionally simulates DEGRADED OCR OUTPUT from a blurry
+photo/screenshot of a ticket. Garbled or missing characters are
+deliberate — they are not a file-writing error.
+==================================================
+
+Deuts4he B  hn
+Fa hrka  rte / Ticket
+
+Reisen  der: MUST ERM NN/T  HOM S
+Auf t ragsnum mer: SI M-7 R2??Q
+
+Von: Fran kf urt(M) Fl ughafen F ernb .
+Nach: Heid  elberg H  bf
+
+Zug: I  CE 1??4
+Datum: 1 8.??.2026
+Abf ahrt: 1 6:0?
+Ank unft: 1?:0 2
+
+Wage n: 2?     Pl atz: 1 ?4
+Klasse: ?
+
+Tarif: Spar pr eis
+Preis: EUR 2?,9 0
+
+-- end of degraded text --
+
+Expected handling: platform was never printed on the real ticket
+(matches fixture 01), but here the TRAIN NUMBER, COACH, and SEAT
+are also unreadable due to the simulated degradation. Extraction
+confidence for those three fields should be low, and the review
+screen must ask the traveller to confirm or re-enter them rather
+than guessing a plausible-looking value.

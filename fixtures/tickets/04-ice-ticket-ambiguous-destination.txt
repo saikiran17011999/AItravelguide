@@ -1,0 +1,34 @@
+==================================================
+SAMPLE / SIMULATED — NOT A REAL TICKET
+Generated for AI Travel Companion prototype testing only.
+==================================================
+
+Deutsche Bahn
+Fahrkarte / Ticket (Städteverbindung / city-to-city fare)
+
+Reisender: MUSTERMANN/SOPHIE
+Auftragsnummer: SIM-4B8L2W
+
+Von: Frankfurt(M) Flughafen Fernbf
+Nach: Heidelberg
+
+Zug: ICE 1134
+Datum: 18.10.2026
+Abfahrt: 16:08
+Ankunft: ca. 17:00
+
+Hinweis: Diese Fahrkarte gilt städteweit und nennt keinen
+bestimmten Bahnhof/Haltepunkt innerhalb von Heidelberg.
+Note: This fare is city-wide and does not name a specific
+station/stop within Heidelberg.
+
+-- end of ticket text --
+
+Expected handling: the destination field extracts as the city
+"Heidelberg" only. Heidelberg's public-transport network has more
+than one stop sharing that name (its main long-distance station
+plus other local stops). The system must treat the destination
+station as "needs confirmation" and ask the traveller to pick or
+confirm the specific stop (e.g., against the main station used in
+the approved pilot corridor) rather than silently assuming the
+long-distance Hauptbahnhof is meant.

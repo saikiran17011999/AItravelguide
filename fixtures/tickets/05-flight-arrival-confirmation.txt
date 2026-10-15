@@ -1,0 +1,27 @@
+==================================================
+SAMPLE / SIMULATED — NOT A REAL TICKET OR BOOKING
+Generated for AI Travel Companion prototype testing only.
+==================================================
+
+Lufthansa
+Electronic Ticket / Itinerary Receipt (arrival leg only)
+
+Passenger: MUSTERMANN/ERIKA
+Booking reference: SIM-2Q7X9D
+
+Flight: LH 400
+Date: 18 OCT 2026
+Arrival: Frankfurt am Main Airport (FRA), Terminal 1
+Scheduled arrival time: 15:20 local time
+
+Seat: 23C
+Class: Economy
+
+-- end of itinerary text --
+
+Expected handling: feeds the trip-setup "arrival location and
+local arrival date/time" fields (see frankfurt-pilot.md's required
+trip input contract). This confirms only that the traveller has
+landed at Frankfurt Airport by the stated time; it is not evidence
+for the onward Fernbahnhof/Heidelberg leg, which fixtures 01–04
+cover separately.

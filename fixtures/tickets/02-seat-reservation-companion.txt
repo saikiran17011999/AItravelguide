@@ -1,0 +1,23 @@
+==================================================
+SAMPLE / SIMULATED — NOT A REAL TICKET
+Generated for AI Travel Companion prototype testing only.
+Companion document to 01-ice-ticket-clear.txt — same booking reference.
+==================================================
+
+Deutsche Bahn
+Reservierung / Seat Reservation
+
+Auftragsnummer / Booking reference: SIM-9F3K7Q
+(This reservation references the fare ticket issued separately — it is not a standalone fare document.)
+
+Zug / Train: ICE 1134
+Datum / Date: 18.10.2026
+Von / From: Frankfurt(M) Flughafen Fernbf
+Nach / To: Heidelberg Hbf
+
+Wagen / Coach: 22
+Platz / Seat: 134 (Fensterplatz / window seat)
+Großraum / Open-plan coach
+
+Diese Reservierung ist nur in Verbindung mit einer gültigen Fahrkarte gültig.
+This reservation is valid only together with a valid fare ticket.
