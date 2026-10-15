@@ -6,6 +6,8 @@ This file applies to every coding agent working in this repository. Read `CLAUDE
 
 Help build **AI Travel Companion**, a production-quality, mobile-first guide for people travelling through unfamiliar transport systems. It must transform confirmed booking details plus authorised route, operator, map, and location sources into simple, visual, step-by-step instructions. The current project is in the discovery-and-specification phase; the implementation stack is not yet approved.
 
+The approved design baseline is documented in `docs/decisions/DEC-001-frankfurt-pilot-baseline.md`: Frankfurt Airport → Heidelberg Hbf → a precise Boxberg accommodation address, as a private personal-testing prototype. Use simulated data unless approved/consented inputs and sources are available. Never hard-code operational transit facts from the scenario.
+
 Treat the user’s latest requirements as the product source of truth. Do not silently expand scope, choose irreversible infrastructure, or invent domain behavior.
 
 ## Working method

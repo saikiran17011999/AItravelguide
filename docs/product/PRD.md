@@ -7,6 +7,15 @@
 
 The product is not another generic map or route search engine. Its differentiator is the bridge between a traveller's booking and the real-world actions required to execute it: finding the correct entrance, reading a departure board, identifying a vehicle, changing at a station, and recovering when information changes.
 
+## Approved pilot baseline
+
+The first release is a **private personal-testing prototype** for Frankfurt Airport → Heidelberg Hbf → accommodation in Boxberg, Heidelberg. [DEC-001](../decisions/DEC-001-frankfurt-pilot-baseline.md) records the full decision, assumptions, and unresolved items.
+
+The initial trip form must collect an arrival location and local arrival date/time, a precise accommodation address or pin, traveller preferences, and optional booking documents. A ticket for intermediate travel is optional:
+
+- If the traveller supplies one, preserve it as booking evidence and honour its known constraints.
+- If the traveller does not supply one, provide clearly labelled, source-timestamped **recommended** options. A recommendation is never represented as a ticket or confirmed booking.
+
 ## 2. Problem and opportunity
 
 First-time international travellers can receive technically valid route results but still not know what to do in a large airport, station, or transit network. Relevant facts are fragmented across ticket PDFs, operator sites, maps, signs, accommodation messages, and changing service notices. The product reduces this interpretation burden without claiming more certainty than its sources justify.
@@ -35,15 +44,15 @@ First-time international travellers can receive technically valid route results 
 
 ### In scope
 
-- One approved launch geography and one representative airport/station-to-destination corridor.
+- Frankfurt Airport → Heidelberg Hbf → a precise Boxberg accommodation destination, while keeping provider interfaces extensible to other cities/countries.
 - Account creation and private trip management.
 - PDF, JPEG, and PNG ticket/itinerary upload subject to approved file limits and processing capability; manual entry as a fallback.
 - OCR/extraction candidate display, confidence cues, and mandatory user correction/confirmation of important journey facts.
-- One final destination address and a multi-leg public-transport route from the confirmed arrival/departure point.
+- Required arrival location/date/time and final destination address/pin, plus a multi-leg public-transport route from the confirmed arrival point.
 - Journey overview plus a mobile-first, step-by-step guide.
 - Authorised map links and a limited set of authorised, attributed visual references or official diagrams.
 - Source, verification, and freshness labels for important facts.
-- A mobile-readable PDF export and an offline-accessible saved guide snapshot.
+- A mobile-readable PDF export and an offline-accessible saved guide snapshot that warns schedules, platforms, and disruptions must be rechecked.
 - Honest empty, error, unavailable-data, and “I cannot find this place” recovery states.
 
 ### Explicitly out of scope for MVP
@@ -114,3 +123,5 @@ Do not publish target numbers before a pilot establishes a baseline. Measure:
 - Users will review extracted booking details before relying on the guide.
 - The selected provider licence permits the intended in-app and PDF use, attribution, caching, and retention.
 - Visual content can be supplied lawfully and accurately enough to add value beyond a map link.
+- A precise Boxberg accommodation address/pin and a representative arrival time will be available for scenario testing.
+- Any real ticket used in the private prototype has informed consent and an approved retention/deletion policy; otherwise only simulated/de-identified data is used.

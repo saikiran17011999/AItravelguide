@@ -4,6 +4,8 @@
 
 This repository is the foundation for **AI Travel Companion**: a mobile-first application that turns a traveller's confirmed booking details and authorised transport/location sources into a clear, visual, step-by-step journey guide. The product brief is distilled into the Markdown documentation under `docs/`.
 
+The approved pilot baseline is [DEC-001](docs/decisions/DEC-001-frankfurt-pilot-baseline.md): a private prototype for Frankfurt Airport → Heidelberg Hbf → a precise Boxberg accommodation address. Use the decision record and its documented assumptions; do not hard-code a real train, platform, bus line, address, timetable, or visual reference.
+
 The work is currently in discovery and specification. Do not scaffold or implement the application until the relevant discovery, requirements, experience, architecture, and provider-selection gates in `docs/plan/roadmap.md` are approved by the user.
 
 ## Source of truth and delivery order

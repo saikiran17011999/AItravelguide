@@ -32,6 +32,15 @@ flowchart LR
   I --> J[Refresh or recover when information changes]
 ```
 
+### Frankfurt pilot input sequence
+
+1. Ask for Frankfurt Airport arrival context and local arrival date/time.
+2. Ask for a precise Boxberg accommodation address or map pin; show that “Boxberg, Heidelberg” alone is insufficient for a final-walk guide.
+3. Offer optional ticket/itinerary upload. Explain that the traveller can continue without intermediate tickets and receive a recommendation rather than a booked plan.
+4. Require review of extracted/entered facts before route planning.
+5. Present the journey as Airport → Fernbahnhof → Heidelberg Hbf → provider-derived local connection → final walk, with each leg's own source state.
+6. Make the current step, not a general chat input, the primary travel-mode surface.
+
 ## Screen inventory
 
 | Screen | User outcome | Essential states |
