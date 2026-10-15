@@ -41,7 +41,7 @@ The prototype must not claim support for untested countries, live monitoring, pl
 
 ### Experience design
 
-- [ ] Produce low-fidelity mobile wireframes for all screens in the experience specification.
+- [x] Produce low-fidelity mobile wireframes for all screens in the experience specification. Visually reviewed by the product owner as a clickable mockup on 2026-10-15 ([wireframes](../design/wireframes.md), [design system](../design/design-system.md)).
 - [ ] Test the document-review and current-step screens with target users before visual polish.
 - [ ] Define copy patterns for uncertainty, stale data, no route, conflicting data, and emergency escalation.
 
@@ -68,8 +68,10 @@ Do not create the app until all of the following have written approval:
 3. Selected providers with licence, cost, and fallback review.
 4. Personal-data classification, retention/deletion, and consent approach.
 5. Architecture/data-model/guide-schema direction.
-6. Wireframes for the primary mobile flow.
+6. Wireframes for the primary mobile flow. — Reviewed and approved 2026-10-15; see the mockup note above.
 7. Evaluation plan and minimum prototype success measures.
+
+Items 3 and 4 remain open (see [open questions](open-questions.md)) and still block application scaffolding even though item 6 is satisfied.
 
 The pilot geography, release type, English-first language strategy, source-labelled schedule-only MVP, and brand direction are approved in [DEC-001](../decisions/DEC-001-frankfurt-pilot-baseline.md). These approvals do not select paid services or satisfy the provider/licence/privacy gates.
 
