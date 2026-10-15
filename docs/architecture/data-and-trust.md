@@ -57,6 +57,34 @@ Each critical fact is stored as a value plus one or more `VerificationRecord`s. 
 | `conflicting` | Two credible sources differ | Requires review/fallback | Show conflict; never choose silently. |
 | `expired` | Old observation | No longer safe for the intended use | Ask user to refresh/check live display. |
 
+## Transfer-buffer policy
+
+Proposed prototype defaults — not sourced from a specific operator's recommended minimum connection time, and not yet confirmed by the product owner:
+
+| Transfer type | Comfortable minimum | Below this: "Tight transfer" | Below this: alert-level warning |
+| --- | --- | --- | --- |
+| Rail-to-rail, same station | 10 minutes | 10 minutes | 5 minutes |
+| Rail/station-to-local bus or tram (exit + walk required) | 15 minutes | 15 minutes | 8 minutes |
+
+- A luggage or accessibility preference the traveller selected adds 5 minutes to every minimum above.
+- If either leg's arrival or departure time is missing, the buffer cannot be computed. State `needs_confirmation`; never default to "safe" or omit the warning.
+- These numbers are an explicit assumption shown to the traveller as a default, not an operator-sourced guarantee, until cross-checked against the selected provider's own connection-time guidance (see [provider evaluation](../research/provider-evaluation.md)).
+
+## Recovery language patterns
+
+Canonical phrasing so tone and trust stay consistent across screens; the [design system's content rules](../design/design-system.md#content-rules) point back to this policy rather than restating it.
+
+| Situation | Pattern | Example |
+| --- | --- | --- |
+| Missing platform/live data | State what's missing, point to the live source | "We could not verify the platform. Check the departure board for [service]." |
+| Conflicting sources | Show both, never choose silently | "Your ticket says Platform 3; the live board says Platform 7. Check the board — it is more current." |
+| Provider unavailable | Say what's unaffected | "We can't reach route data right now. Your confirmed ticket details are unchanged." |
+| Expired/stale data | Name the age, offer refresh | "This was checked 6 hours ago. Refresh before you travel." |
+| Can't find a place | Ask to recheck first, then offer an approved alternative | "First, check [sign/board]. If you still can't find it: [external link] or [ask assistant]." |
+| Unsupported capability | Say it plainly | "Live platform tracking isn't available for this route yet." |
+
+A recovery message always names: (a) what is unknown or unavailable, (b) the safest immediate action, (c) an escalation path. It never implies the system attempted something it did not do.
+
 ## Guide-generation contract
 
 The generator receives a read-only, versioned `JourneyGuideInput`; it cannot issue provider calls, mutate bookings, or invent source values. Its output must validate against a schema similar to:

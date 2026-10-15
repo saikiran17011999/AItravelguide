@@ -10,15 +10,16 @@ This set translates the initial product brief into a reviewable, implementation-
 ## Reading order
 
 1. [Product requirements](product/PRD.md) — the problem, users, scope, and MVP.
-2. [Experience specification](product/experience.md) — journey flow, information architecture, screens, and trust cues.
-3. [Architecture overview](architecture/overview.md) — boundaries, flows, provider adapters, and security.
-4. [Data and trust model](architecture/data-and-trust.md) — entities, evidence, verification, and AI constraints.
-5. [Provider evaluation](research/provider-evaluation.md) — research findings, selection criteria, and licensing gates.
-6. [Delivery roadmap](plan/roadmap.md) — staged work, approval gates, and prototype plan.
-7. [Open questions](plan/open-questions.md) — decisions needed before implementation.
-8. [Frankfurt pilot decision](decisions/DEC-001-frankfurt-pilot-baseline.md) — approved design baseline and assumptions.
-9. [Wireframes](design/wireframes.md) and [design system](design/design-system.md) — mobile-first interface direction.
-10. [Frankfurt pilot architecture](architecture/frankfurt-pilot.md) and [options/costs](research/options-and-costs.md) — vertical-slice boundary and provider comparison.
+2. [User stories](product/user-stories.md) — testable stories, acceptance criteria, and non-goals per functional area.
+3. [Experience specification](product/experience.md) — journey flow, information architecture, screens, and trust cues.
+4. [Architecture overview](architecture/overview.md) — boundaries, flows, provider adapters, and security.
+5. [Data and trust model](architecture/data-and-trust.md) — entities, evidence, verification, and AI constraints.
+6. [Provider evaluation](research/provider-evaluation.md) — research findings, selection criteria, and licensing gates.
+7. [Delivery roadmap](plan/roadmap.md) — staged work, approval gates, and prototype plan.
+8. [Open questions](plan/open-questions.md) — decisions needed before implementation.
+9. [Frankfurt pilot decision](decisions/DEC-001-frankfurt-pilot-baseline.md) — approved design baseline and assumptions.
+10. [Wireframes](design/wireframes.md) and [design system](design/design-system.md) — mobile-first interface direction.
+11. [Frankfurt pilot architecture](architecture/frankfurt-pilot.md) and [options/costs](research/options-and-costs.md) — vertical-slice boundary and provider comparison.
 
 ## Source-of-truth rules
 

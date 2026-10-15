@@ -36,8 +36,8 @@ The prototype must not claim support for untested countries, live monitoring, pl
 - [ ] Choose candidate launch corridors and score them using the provider evaluation criteria.
 - [ ] Conduct 5–8 interviews or usability sessions with the intended travellers; confirm language, anxiety, luggage, and offline needs.
 - [ ] Collect a consented, representative test corpus of flight/train tickets and screenshots; define data-handling rules first.
-- [ ] Convert PRD requirements into user stories with acceptance criteria and explicit non-goals.
-- [ ] Define fact statuses, freshness rules, transfer-buffer policy, recovery language, and source-attribution requirements.
+- [x] Convert PRD requirements into user stories with acceptance criteria and explicit non-goals. See [user stories](../product/user-stories.md).
+- [x] Define fact statuses, freshness rules, transfer-buffer policy, recovery language, and source-attribution requirements. See [data and trust model](../architecture/data-and-trust.md); transfer-buffer minutes are a proposed default pending product-owner confirmation.
 
 ### Experience design
 
